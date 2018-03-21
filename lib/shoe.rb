@@ -7,7 +7,7 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS << brand if BRANDS.detect{|shoe| shoe != brand || shoe == nil}
+    BRANDS << brand if BRANDS[0] == nil
   end
   binding.pry
 
