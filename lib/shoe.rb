@@ -9,6 +9,7 @@ class Shoe
     @brand = brand
     BRANDS << brand if BRANDS.detect{|shoe| shoe != brand}
   end
+  binding.pry
 
   def cobble
     self.condition = "new"
